@@ -17,7 +17,7 @@ const GET_ITEM_COUNT = gql`
   }
 `;
 
-const CartContainer = ({ toggleCartHidden, data: { itemCount } }) => {
+const CartContainer = ({ data: { itemCount }, toggleCartHidden }) => {
   return <CartIcon toggleCartHidden={toggleCartHidden} itemCount={itemCount} />;
 };
 
